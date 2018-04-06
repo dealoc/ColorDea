@@ -17,6 +17,7 @@
 		200F4B682077B5C60030DE46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 200F4B662077B5C60030DE46 /* LaunchScreen.storyboard */; };
 		200F4B742077BE910030DE46 /* Joueur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200F4B732077BE910030DE46 /* Joueur.swift */; };
 		202470972077C8E200874B83 /* Carre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202470962077C8E200874B83 /* Carre.swift */; };
+		202470992077D0A600874B83 /* Extension Collision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202470982077D0A600874B83 /* Extension Collision.swift */; };
 		2089AC5C2077C0E200EF3F53 /* Constante.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2089AC5B2077C0E200EF3F53 /* Constante.swift */; };
 		2089AC5E2077C16100EF3F53 /* Sol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2089AC5D2077C16100EF3F53 /* Sol.swift */; };
 		2089AC602077C5BE00EF3F53 /* MonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2089AC5F2077C5BE00EF3F53 /* MonLabel.swift */; };
@@ -37,6 +38,7 @@
 		200F4B692077B5C60030DE46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		200F4B732077BE910030DE46 /* Joueur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joueur.swift; sourceTree = "<group>"; };
 		202470962077C8E200874B83 /* Carre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carre.swift; sourceTree = "<group>"; };
+		202470982077D0A600874B83 /* Extension Collision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension Collision.swift"; sourceTree = "<group>"; };
 		2089AC5B2077C0E200EF3F53 /* Constante.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constante.swift; sourceTree = "<group>"; };
 		2089AC5D2077C16100EF3F53 /* Sol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sol.swift; sourceTree = "<group>"; };
 		2089AC5F2077C5BE00EF3F53 /* MonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonLabel.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				200F4B5D2077B5C50030DE46 /* GameScene.swift */,
+				202470982077D0A600874B83 /* Extension Collision.swift */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				2089AC622077C7E900EF3F53 /* Obstacle.swift in Sources */,
 				200F4B582077B5C50030DE46 /* AppDelegate.swift in Sources */,
 				202470972077C8E200874B83 /* Carre.swift in Sources */,
+				202470992077D0A600874B83 /* Extension Collision.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

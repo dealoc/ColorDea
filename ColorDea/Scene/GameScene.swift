@@ -18,10 +18,12 @@ class GameScene: SKScene {
     var scoreDuJoueur = 0
     var obstacles = [Obstacle]()
     let espacement: CGFloat = 750
+    var gameOverLabel: MonLabel?
     
     
     override func didMove(to view: SKView) {
         physicsWorld.gravity.dy = -9
+        physicsWorld.contactDelegate = self
         
         camera = cameraNode
         addChild(cameraNode)
@@ -69,9 +71,56 @@ class GameScene: SKScene {
         if joueur != nil {
             joueur?.sauter()
         }
+        if gameOverLabel != nil {
+            gameOverLabel?.removeFromParent()
+            gameOverLabel = nil
+            ajouterJoueur()
+            for _ in (0...2) {
+                ajouterObstacle()
+            }
+            scoreDuJoueur = 0
+            gameOverLabel?.ajoutTexte("")
+            scoreLabel.ajoutTexte(String(0))
+            cameraNode.position = CGPoint(x: size.width / 2, y: size.height / 2)
+        }
     }
     
     override func update(_ currentTime: TimeInterval) {
+        guard joueur != nil else { return }
+        let positionDeLaCamera = cameraNode.convert(joueur!.position, from: self)
+        if positionDeLaCamera.y > 0 {
+            cameraNode.position.y = joueur!.position.y
+        }
+        if positionDeLaCamera.y < -size.height / 2 {
+            gameOver()
+        }
+
+        if joueur!.position.y > espacement * CGFloat(obstacles.count - 2) + 200 {
+            scoreDuJoueur += 1
+            scoreLabel.ajoutTexte(String(scoreDuJoueur))
+            joueur?.changerDeCouleur()
+            ajouterObstacle()
+        }
+    }
+    
+    func gameOver() {
+        
+        if joueur != nil {
+            joueur?.removeFromParent()
+            joueur = nil
+        }
+        
+        for obstacle in obstacles {
+            obstacle.removeFromParent()
+        }
+        obstacles.removeAll()
+        gameOverLabel = MonLabel()
+        gameOverLabel?.miseEnPlace(x: 0, y: 0)
+        gameOverLabel?.ajoutTexte("Game OVER \n Score: " + String(scoreDuJoueur))
+        if gameOverLabel != nil {
+            cameraNode.addChild(gameOverLabel!)
+
+        }
         
     }
     
