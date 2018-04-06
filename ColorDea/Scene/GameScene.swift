@@ -28,6 +28,7 @@ class GameScene: SKScene {
         sol.miseEnPlace(scene: self)
         addChild(sol)
         
+        
         scoreLabel.miseEnPlace(x: -(UIScreen.main.bounds.width / 1.5), y: -(UIScreen.main.bounds.height / 1.5))
         cameraNode.addChild(scoreLabel)
         scoreLabel.ajoutTexte(String(scoreDuJoueur))
