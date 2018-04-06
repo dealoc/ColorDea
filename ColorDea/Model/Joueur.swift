@@ -17,6 +17,8 @@ class Joueur: SKShapeNode {
         
         let body = SKPhysicsBody(circleOfRadius: 25)
         body.affectedByGravity = true
+        body.categoryBitMask = MASK_JOUEUR
+        body.collisionBitMask = MASK_SOL
         body.mass = 1.5
         physicsBody = body
     }
