@@ -11,8 +11,7 @@ import SpriteKit
 class Joueur: SKShapeNode {
 
     func miseEnPlace(scene: SKScene) {
-        fillColor = .blue
-        strokeColor = .blue
+        changerDeCouleur()
         position = CGPoint(x: scene.size.width / 2, y: scene.size.height / 2)
         
         let body = SKPhysicsBody(circleOfRadius: 25)
@@ -24,7 +23,12 @@ class Joueur: SKShapeNode {
     }
     
     func sauter() {
-        physicsBody?.velocity.dy = 500
+        physicsBody?.velocity.dy = 650
     }
     
+    func changerDeCouleur() {
+        let couleur = COULEURS[Int(arc4random_uniform(UInt32(4)))]
+        fillColor = couleur
+        strokeColor = couleur
+    }
 }
