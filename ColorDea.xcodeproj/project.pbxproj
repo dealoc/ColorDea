@@ -18,6 +18,7 @@
 		200F4B742077BE910030DE46 /* Joueur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200F4B732077BE910030DE46 /* Joueur.swift */; };
 		2089AC5C2077C0E200EF3F53 /* Constante.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2089AC5B2077C0E200EF3F53 /* Constante.swift */; };
 		2089AC5E2077C16100EF3F53 /* Sol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2089AC5D2077C16100EF3F53 /* Sol.swift */; };
+		2089AC602077C5BE00EF3F53 /* MonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2089AC5F2077C5BE00EF3F53 /* MonLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		200F4B732077BE910030DE46 /* Joueur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joueur.swift; sourceTree = "<group>"; };
 		2089AC5B2077C0E200EF3F53 /* Constante.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constante.swift; sourceTree = "<group>"; };
 		2089AC5D2077C16100EF3F53 /* Sol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sol.swift; sourceTree = "<group>"; };
+		2089AC5F2077C5BE00EF3F53 /* MonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			children = (
 				200F4B732077BE910030DE46 /* Joueur.swift */,
 				2089AC5D2077C16100EF3F53 /* Sol.swift */,
+				2089AC5F2077C5BE00EF3F53 /* MonLabel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				200F4B742077BE910030DE46 /* Joueur.swift in Sources */,
 				2089AC5E2077C16100EF3F53 /* Sol.swift in Sources */,
 				200F4B602077B5C50030DE46 /* GameViewController.swift in Sources */,
+				2089AC602077C5BE00EF3F53 /* MonLabel.swift in Sources */,
 				2089AC5C2077C0E200EF3F53 /* Constante.swift in Sources */,
 				200F4B582077B5C50030DE46 /* AppDelegate.swift in Sources */,
 			);
